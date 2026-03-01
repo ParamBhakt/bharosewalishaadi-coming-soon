@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BharoseWali Shaadi - Coming Soon</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      min-height: 100vh;
+      background: linear-gradient(160deg, #080F1A, #0D1E35);
+      font-family: Georgia, serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      overflow: hidden;
+    }
+
+    .blob1 {
+      position: fixed; top: 5%; left: 5%;
+      width: 300px; height: 300px;
+      border-radius: 50%;
+      background: #D4A843;
+      opacity: 0.04; filter: blur(80px);
+      pointer-events: none;
+    }
+    .blob2 {
+      position: fixed; bottom: 5%; right: 5%;
+      width: 300px; height: 300px;
+      border-radius: 50%;
+      background: #E86A10;
+      opacity: 0.05; filter: blur(80px);
+      pointer-events: none;
+    }
+
+    .container {
+      text-align: center;
+      padding: 40px 20px;
+      max-width: 600px;
+      width: 100%;
+    }
+
+    .logo-emoji { font-size: 60px; margin-bottom: 16px; display: block; }
+
+    .logo-text {
+      font-size: 36px;
+      font-weight: 700;
+      color: #D4A843;
+      letter-spacing: 1px;
+    }
+
+    .logo-text span { color: white; font-weight: 400; }
+
+    .tagline {
+      font-size: 14px;
+      color: #475569;
+      font-style: italic;
+      margin-top: 8px;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(212,168,67,0.2);
+      border-radius: 24px;
+      padding: 40px 32px;
+      backdrop-filter: blur(20px);
+    }
+
+    .coming-soon {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      color: #D4A843;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .main-title {
+      font-size: 28px;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+
+    .description {
+      font-size: 15px;
+      color: #8BAAC8;
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+
+    .launch-box {
+      background: rgba(212,168,67,0.08);
+      border: 1px solid rgba(212,168,67,0.3);
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 32px;
+    }
+
+    .launch-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: rgba(212,168,67,0.6);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .launch-date {
+      font-size: 28px;
+      font-weight: 700;
+      color: #D4A843;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 32px;
+      text-align: left;
+    }
+
+    .feature {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(212,168,67,0.1);
+      border-radius: 12px;
+      padding: 14px;
+    }
+
+    .feature-icon { font-size: 20px; margin-bottom: 6px; }
+    .feature-title { font-size: 13px; font-weight: 700; color: #D4A843; margin-bottom: 4px; }
+    .feature-desc { font-size: 11px; color: #475569; }
+
+    .notify {
+      font-size: 13px;
+      color: #475569;
+      padding-top: 20px;
+      border-top: 1px solid rgba(212,168,67,0.1);
+    }
+
+    .notify a {
+      color: #D4A843;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    @media (max-width: 480px) {
+      .features { grid-template-columns: 1fr; }
+      .main-title { font-size: 22px; }
+      .logo-text { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="blob1"></div>
+  <div class="blob2"></div>
+
+  <div class="container">
+    <span class="logo-emoji">💍</span>
+    <div class="logo-text">BharoseWali<span>Shaadi</span></div>
+    <div class="tagline">Rishta Pavitra, Bharosa Sachha 🙏</div>
+
+    <div class="card">
+      <div class="coming-soon">✨ Coming Soon</div>
+      <h1 class="main-title">India ka Sabse Bharosemand Matrimony Platform</h1>
+      <p class="description">
+        Jahan rishte sirf profile se nahi, <strong style="color:#D4A843;">Bharosa Score</strong> aur 
+        <strong style="color:#D4A843;">Pavitra Score</strong> se bante hain. 
+        Verification ke saath — asli log, sachche rishte! 🙏
+      </p>
+
+      <div class="launch-box">
+        <div class="launch-label">🚀 Launch Date</div>
+        <div class="launch-date">11 April 2026</div>
+      </div>
+
+      <div class="features">
+        <div class="feature">
+          <div class="feature-icon">✅</div>
+          <div class="feature-title">Bharosa Score</div>
+          <div class="feature-desc">Verified profiles ko milta hai trust score</div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🙏</div>
+          <div class="feature-title">Pavitra Score</div>
+          <div class="feature-desc">Spiritual compatibility check</div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🔢</div>
+          <div class="feature-title">Mulank Matching</div>
+          <div class="feature-desc">Numerology se perfect match</div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🔒</div>
+          <div class="feature-title">100% Safe</div>
+          <div class="feature-desc">DPDP Act 2023 compliant</div>
+        </div>
+      </div>
+
+      <div class="notify">
+        Sampark ke liye: <a href="mailto:info@bharosewalishaadi.in">info@bharosewalishaadi.in</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
